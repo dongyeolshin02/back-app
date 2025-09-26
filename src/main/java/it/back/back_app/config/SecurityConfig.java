@@ -125,7 +125,8 @@ public class SecurityConfig {
     ));
        //메서드 설정
        config.setAllowedMethods(List.of("GET",  "POST", "DELETE", "PUT", "PATCH",  "OPTIONS"));
-       config.setAllowedOrigins(List.of("http://localhost:3000", "http://localhost:4000"));
+       config.setAllowedOrigins(List.of("http://localhost:3000", "http://localhost:3001",
+                                        "http://localhost:4000", "http://localhost:4001"));
        config.setAllowCredentials(true);
        config.setMaxAge(3600L);
 

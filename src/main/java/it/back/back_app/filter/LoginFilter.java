@@ -30,7 +30,7 @@ public class LoginFilter extends UsernamePasswordAuthenticationFilter{
     private final AuthenticationManager  authenticationManager;
     private final JWTUtils jwtUtils;
     
-    public static final long ACCESS_TOKEN_EXPIRE_TIME = 30;   // 30분 
+    public static final long ACCESS_TOKEN_EXPIRE_TIME = 86400L;   // 24시간
     public static final long REFRESH_TOKEN_EXPIRE_TIME = 86400L; //24시간
     
     //인증시도
